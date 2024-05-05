@@ -1,0 +1,9 @@
+default:
+  @just -l
+
+install:
+  @poetry install
+
+dev:
+  @poetry run streamlit run app.py --server.runOnSave true
+
