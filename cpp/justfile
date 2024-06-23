@@ -1,0 +1,16 @@
+build_dir := justfile_directory() + "/build"
+
+default:
+  @just -l
+
+build:
+  @mkdir -p {{build_dir}} && cd $_ && cmake .. && make
+
+run: build
+  @cd {{build_dir}} && ./main
+
+test: build
+  @cd {{build_dir}} && ctest
+
+clean:
+  @[ -d {{build_dir}} ] && cd {{build_dir}} && make clean || true
