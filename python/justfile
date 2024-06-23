@@ -1,0 +1,12 @@
+default:
+  @just -l
+
+install:
+  @poetry install
+
+lint:
+  @poetry run mypy app tests
+  @poetry run ruff check
+
+test:
+  @poetry run pytest tests

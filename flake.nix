@@ -8,6 +8,11 @@
         description = "Template for a C++ project";
       };
 
+      python = {
+        path = ./python;
+        description = "Template for a python project";
+      };
+
       rust = {
         path = ./rust;
         description = "Template for a rust project";

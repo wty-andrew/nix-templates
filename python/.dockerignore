@@ -1,0 +1,16 @@
+Dockerfile
+.dockerignore
+compose.yaml
+
+.git
+.gitignore
+.github/
+
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.mypy_cache
+.ruff_cache
+
+.vscode
