@@ -17,6 +17,11 @@
         path = ./rust;
         description = "Template for a rust project";
       };
+
+      scala = {
+        path = ./scala;
+        description = "Template for a scala project";
+      };
     };
   };
 }
