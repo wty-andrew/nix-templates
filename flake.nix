@@ -22,6 +22,11 @@
         path = ./scala;
         description = "Template for a scala project";
       };
+
+      typescript = {
+        path = ./typescript;
+        description = "Template for a typescript project";
+      };
     };
   };
 }
